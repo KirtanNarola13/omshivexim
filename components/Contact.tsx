@@ -33,8 +33,8 @@ const Contact: React.FC = () => {
                 { 
                   icon: <Mail size={22} />, 
                   label: 'Email Support', 
-                  val: 'omshivexim@gmail.com', 
-                  href: 'mailto:omshivexim@gmail.com',
+                  val: 'omshivexim0@gmail.com', 
+                  href: 'mailto:omshivexim0@gmail.com',
                   desc: 'Expect a response within 12 hours.'
                 },
                 { 

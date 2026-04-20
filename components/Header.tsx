@@ -79,15 +79,20 @@ const Header: React.FC = () => {
         <motion.div 
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex flex-col items-start lg:items-center justify-center cursor-pointer relative z-[10001] lg:w-1/3 text-left lg:text-center"
+          className="flex items-center cursor-pointer relative z-[10001] lg:w-1/3"
           onClick={(e) => scrollToSection(e, 'hero')}
         >
-          <span className={`text-xl lg:text-3xl font-serif tracking-widest ${scrolled || mobileMenuOpen ? 'text-brand-dark' : 'text-brand-dark'}`}>
-            OM SHIV <span className="text-brand-gold italic">EXIM</span>
-          </span>
-          <span className={`text-[7px] md:text-[8px] tracking-[0.2em] sm:tracking-[0.3em] uppercase font-semibold mt-1 ${scrolled || mobileMenuOpen ? 'text-brand-dark/50' : 'text-brand-dark/50'}`}>
-            Dry Fruits & Disposables
-          </span>
+          <div className="mr-4 w-12 h-12 md:w-16 md:h-16 rounded-full border border-brand-gold/50 bg-white shadow-sm overflow-hidden flex-shrink-0 flex items-center justify-center transition-transform hover:scale-105">
+            <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex flex-col items-start lg:items-center justify-center lg:w-full">
+            <span className={`text-xl lg:text-3xl font-serif tracking-widest ${scrolled || mobileMenuOpen ? 'text-brand-dark' : 'text-brand-dark'}`}>
+              OM SHIV <span className="text-brand-gold italic">EXIM</span>
+            </span>
+            <span className={`text-[7px] md:text-[8px] tracking-[0.2em] sm:tracking-[0.3em] uppercase font-semibold mt-1 ${scrolled || mobileMenuOpen ? 'text-brand-dark/50' : 'text-brand-dark/50'}`}>
+              Dry Fruits & Disposables
+            </span>
+          </div>
         </motion.div>
 
         {/* Desktop Nav - Right */}

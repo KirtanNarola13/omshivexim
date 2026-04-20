@@ -21,11 +21,16 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
           <div className="lg:col-span-1">
-            <div className="flex flex-col mb-8 cursor-pointer" onClick={(e) => scrollToSection(e, 'hero')}>
-              <span className="text-3xl font-serif tracking-widest text-brand-sand">
-                OM SHIV
-              </span>
-              <span className="text-xl font-serif text-brand-gold italic">EXIM</span>
+            <div className="flex items-center mb-8 cursor-pointer" onClick={(e) => scrollToSection(e, 'hero')}>
+              <div className="mr-3 w-12 h-12 rounded-full border border-brand-gold/30 bg-white overflow-hidden flex-shrink-0 flex items-center justify-center">
+                <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-2xl font-serif tracking-widest text-brand-sand leading-none">
+                  OM SHIV
+                </span>
+                <span className="text-lg font-serif text-brand-gold italic">EXIM</span>
+              </div>
             </div>
             <p className="text-brand-sand/60 text-sm leading-relaxed mb-8 max-w-xs font-light">
               Pioneering excellence in dry fruits and eco-friendly products export. Quality verified, global standards maintained.
@@ -51,7 +56,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex flex-col space-y-1">
                 <span className="text-brand-sand/40 text-[10px] uppercase font-bold tracking-widest">Business Email</span>
-                <a href="mailto:omshivexim@gmail.com" className="hover:text-brand-gold transition-colors">omshivexim@gmail.com</a>
+                <a href="mailto:omshivexim0@gmail.com" className="hover:text-brand-gold transition-colors">omshivexim0@gmail.com</a>
               </li>
             </ul>
           </div>

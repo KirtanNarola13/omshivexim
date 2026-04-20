@@ -28,9 +28,17 @@ const App: React.FC = () => {
             className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-brand-sand text-brand-dark"
           >
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
+              className="w-32 h-32 md:w-48 md:h-48 rounded-full border-2 border-brand-gold bg-white overflow-hidden shadow-2xl mb-8 flex items-center justify-center"
+            >
+              <img src="/logo.png" alt="Logo" className="w-full h-full object-cover" />
+            </motion.div>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               className="text-4xl md:text-5xl font-serif tracking-widest text-brand-dark mb-6 text-center"
             >
               OM SHIV <span className="text-brand-gold italic">EXIM</span>

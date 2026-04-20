@@ -15,7 +15,7 @@ const About: React.FC = () => {
     <section id="about" className="py-24 lg:py-32 bg-brand-cream relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-20 items-center">
-          
+
           {/* Left Text */}
           <div className="lg:w-1/2 space-y-12">
             <motion.div
@@ -39,11 +39,11 @@ const About: React.FC = () => {
 
             <div className="grid sm:grid-cols-2 gap-x-8 gap-y-10">
               {stats.map((item, idx) => (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: idx * 0.1 }}
-                  key={idx} 
+                  key={idx}
                   className="flex flex-col space-y-3 group border-l border-brand-gold/30 pl-6"
                 >
                   <div className="text-brand-gold">
@@ -67,13 +67,13 @@ const About: React.FC = () => {
           >
             <div className="aspect-square md:aspect-[4/3] overflow-hidden rounded-tr-[5rem] rounded-bl-[5rem] relative z-10 border border-brand-dark/5">
               <img
-                src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                src="https://i.pinimg.com/736x/c0/c2/3d/c0c23d573bd3486b58517ab31b001024.jpg"
                 alt="Global Logistics Trade"
                 className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
               />
             </div>
             {/* Minimal Badge */}
-            <motion.div 
+            <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
