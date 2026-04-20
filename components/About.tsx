@@ -5,10 +5,10 @@ import { ShieldCheck, TrendingUp, Anchor, Globe2 } from 'lucide-react';
 
 const About: React.FC = () => {
   const stats = [
-    { icon: <ShieldCheck />, title: 'Premium Grade', desc: 'Handpicked selection of the finest dry fruits.' },
-    { icon: <Globe2 />, title: 'Eco-Friendly', desc: 'Sustainable disposable plates for global markets.' },
-    { icon: <Anchor />, title: 'Global Reach', desc: 'Strategically located for international trade routes.' },
-    { icon: <TrendingUp />, title: 'Efficient Chain', desc: 'Direct from source to shipping with zero delay.' },
+    { icon: ShieldCheck, title: 'Premium Grade', desc: 'Handpicked selection of the finest dry fruits.' },
+    { icon: Globe2, title: 'Eco-Friendly', desc: 'Sustainable disposable plates for global markets.' },
+    { icon: Anchor, title: 'Global Reach', desc: 'Strategically located for international trade routes.' },
+    { icon: TrendingUp, title: 'Efficient Chain', desc: 'Direct from source to shipping with zero delay.' },
   ];
 
   return (
@@ -47,7 +47,7 @@ const About: React.FC = () => {
                   className="flex flex-col space-y-3 group border-l border-brand-gold/30 pl-6"
                 >
                   <div className="text-brand-gold">
-                    {React.cloneElement(item.icon as React.ReactElement, { size: 28, strokeWidth: 1.5 })}
+                    <item.icon size={28} strokeWidth={1.5} />
                   </div>
                   <div>
                     <h4 className="font-bold text-brand-dark text-lg mb-1 font-serif">{item.title}</h4>
